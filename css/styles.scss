@@ -1,0 +1,17 @@
+---
+---
+
+* { box-sizing: border-box; }
+
+$gray: #7F7979;
+$white: #fff;
+$black: #222;
+
+$primary-color: #FFAC38;
+$secondary-color: #4E1C39;
+$accent-color: #FC2366;
+$alt-color-1: #F46966;
+$alt-color-2: #392033;
+
+@import 'base';
+@import 'components';
