@@ -24,7 +24,7 @@
 }
 
 .top-bar {
-    background-color: $main-color;
+    background-color: $primary-color;
     @extend .clearfix;
     text-align: center;
     height: 50px;
@@ -59,8 +59,8 @@
   }
 
   .footer {
-    background-color: $gray-80;
-    color: $white-80;
+    background-color: $gray;
+    color: $white;
     padding-top: 1px;
     padding-bottom: 10px;
     font-size: 16px;
@@ -68,7 +68,7 @@
 
     &__content {
 
-        @include breakpoint(small) { text-align: center; }
+        @include breakpoint(small only) { text-align: center; }
 
         h2 {
             margin: 0 0 20px;
