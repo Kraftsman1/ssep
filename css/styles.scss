@@ -17,6 +17,9 @@ $text-color: $black;
 
 $main-font: 'Arial';
 
+$title-font-lg: 'IBM Plex Sans';
+$title-font-sm: 'Muli';
+
 @import 'breakpoint';
 @import 'base';
 @import 'layout';
