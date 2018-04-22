@@ -1,3 +1,5 @@
+$full-section-height: 820px;
+
 .page-section {
     position: relative;
     padding-top: 30px;
@@ -9,20 +11,20 @@
     }
 
     &--full {
-        height: 820px;
+        height: $full-section-height;
         min-height: 100vh;
     }
 
     &--index-top-section {
-        background: center / cover no-repeat url('../images/adults-africa-colorful-667200.jpg');
+        // background: center / cover no-repeat url('../images/adults-africa-colorful-667200.jpg');
+        padding-top: $full-section-height * 0.3;
         .page-section__title {
             color: $white;
             // color: $primary-color;
             font-size: 5rem;
             font-weight: 700;
             font-family: $title-font-lg;
-            position: relative;
-            top: 40%;
+            margin-bottom: 10px;
         }
         .page-section__subtitle {
             color: $primary-color;
@@ -30,13 +32,19 @@
             font-size: 3rem;
             font-weight: 300;
             font-family: $title-font-sm;
-            position: relative;
-            top: 32%;
             text-align: center;
             width: 800px;
             margin: 0 auto;
             text-transform: none;
         }
+    }
+
+    .video-bg__video {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: -2;
     }
 
     h4 {
@@ -86,6 +94,7 @@
     top: 0;
     height: 100%;
     width: 100%;
+    z-index: -1;
 }
 
 .divider {

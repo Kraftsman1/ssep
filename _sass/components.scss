@@ -27,26 +27,37 @@
     background-color: $primary-color;
     @extend .clearfix;
     text-align: center;
-    height: 50px;
+    height: 120px;
     display: flex;
     position: absolute;
     top: 0;
     width: 100%;
     z-index: 100;
     background-color: rgba(0,0,0,0);
+    padding: 10px 0;
+    align-items: center;
+    justify-content: center;
 
     &--shaded {
         background-color: rgba(black, .2);
     }
 
     &__button {
-        @extend .material-icons;
-        color: $white;
+        // @extend .material-icons;
+        color: rgba($white, .5);
         padding: 12px 15px;
         cursor: pointer;
 
+        &--padding-lg {
+            padding: 40px;
+        }
+
+        &--hidden {
+            visibility: hidden;
+        }
+
         &:hover {
-            background-color: rgba($white, .1);
+            color: rgba($white, 1);
         }
     }
 
@@ -60,6 +71,45 @@
 
     &__logo img {
         height: 100%;
+    }
+}
+
+#menu {
+    width: 320px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background: $black;
+    z-index: 10004;
+    color: $white;
+
+    &.right {
+        right: -320px;
+        @extend .transition;
+        &.open {
+            @extend .transition;
+            right: 0;
+        }
+    }
+}
+
+#menu-button {
+    font-size: 30px;
+    @extend .transition;
+    &.open {
+        @extend .transition;
+        transform: rotate(90deg);
+    }
+}
+
+body {
+    @extend .transition;
+    overflow-x: hidden;
+    position: relative;
+    left: 0;
+    &.open {
+        @extend .transition;
+        left: -320px;
     }
 }
 
