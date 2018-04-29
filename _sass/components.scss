@@ -2,18 +2,21 @@
     display: inline-block;
     text-transform: uppercase;
     letter-spacing: 1px;
-    background-color: rgba($black, .1);
+    background-color: $primary-color;
+    color: $black;
+    font-weight: bold;
     cursor: pointer;
     padding: 15px 20px;
     margin: 2px;
     text-decoration: none;
+    border-radius: 4px;
 
     @extend .transition;
 
     &:hover {
-        text-decoration: none;
         @extend .transition;
-        background-color: rgba($black, .2);
+        text-decoration: none;
+        background-color: darken($primary-color, 30);
     }
 
     i {
@@ -67,10 +70,15 @@
         margin: 0;
         display: inline-block;
         height: 100%;
-    }
-
-    &__logo img {
-        height: 100%;
+        img {
+            height: 100%;
+            opacity: 0.5;
+            @extend .transition;
+            &:hover {
+                @extend .transition;
+                opacity: 1;
+            }
+        }
     }
 }
 
@@ -133,6 +141,34 @@ body {
             text-align: left;
             font-size: 1.3rem;
         }
+    }
+}
+
+.description {
+    &--emphatic {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &__descriptor {
+            color: $primary-color;
+            font-family: $block-font;
+            font-size: 4rem;
+            font-weight: bold;
+            font-style: italic;
+            text-transform: uppercase;
+            opacity: 0.8;
+        }
+        &__description {
+            flex-basis: 50%;
+            color: $white;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.infographic {
+    &--wide {
+
     }
 }
 

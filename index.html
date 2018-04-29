@@ -4,14 +4,34 @@ layout: default
 
 
 <section class="page-section page-section--full page-section--index-top-section">
-    <video class="video-bg__video" src="images/video/ssep1.mp4" autoplay loop muted></video>
+    <video class="video-bg__video" src="{{site.url}}{{base.url}}/images/video/ssep1.mp4" preload="true" autoplay="autoplay" loop="loop"><source src="{{site.url}}{{base.url}}/images/video/ssep1.mp4" type="video/mp4"></video>
     <div class="section-overlay section-overlay--darken"> </div>
-    <h1 class="page-section__title">Educating to Change Lives</h1>
+    <h1 class="page-section__title">Educating Communities</h1>
     <h2 class="page-section__subtitle">Sub Saharan Education Project</h2>
+    <div class="centered padded padded--lg"><a class="button">What We Do</a></div>
 </section>
 
-<section class="page-section">
-    <h1>Who We Are</h1>
+<section class="page-section page-section--dark page-section--index-mission">
+    <!-- <h1 class="page-section__title">Who We Are</h1> -->
+    <div class="row description description--emphatic">
+        <div class="small-12 large-4 columns">
+            <div class="description description--emphatic__descriptor">Mission</div>
+        </div>
+        <div class="small-12 large-8 columns">
+            <div class="description description--emphatic__description">To enrich the lives of women and children by increasing access to community based educational opportunities.</div>
+        </div>
+        <div class="small-12 large-4 columns">
+            <div class="description description--emphatic__descriptor">Vision</div>
+        </div>
+        <div class="small-12 large-8 columns">
+            <div class="description description--emphatic__description">Women and children will be able to access opportunities to transform their lives, achieve their goals, and improve the communities in which they reside.</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 large-12 columns">
+            <img class="infographic infographic--wide" src="{{site.url}}{{base.url}}/images/mission.png">
+        </div>
+    </div>
 </section>
 
 <section class="page-section">

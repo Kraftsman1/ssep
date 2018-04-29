@@ -1,3 +1,5 @@
+* { box-sizing: border-box; }
+
 .clearfix:after {
    content: " ";
    visibility: hidden;
@@ -22,8 +24,22 @@
   direction: ltr;
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
-  /* Support for IE. */ font-feature-settings: 'liga';
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+
   // vertical-align: middle;
 }
 
 .centered { text-align: center; }
+
+.padded {
+  &--lg {
+    padding: 40px;
+  }
+  &--m {
+    padding: 10px;
+  }
+  &--sm {
+    padding: 5px;
+  }
+}

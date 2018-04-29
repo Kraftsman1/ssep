@@ -1,7 +1,6 @@
 ---
 ---
-
-* { box-sizing: border-box; }
+// Site specific settings
 
 $gray: #7F7979;
 $white: #fff;
@@ -20,7 +19,12 @@ $main-font: 'Arial';
 $title-font-lg: 'IBM Plex Sans';
 $title-font-sm: 'Muli';
 
+$block-font: 'Montserrat';
+
+// Vendor
 @import 'breakpoint';
+
+// Core styles
 @import 'base';
 @import 'layout';
 @import 'typography';
