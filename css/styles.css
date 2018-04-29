@@ -31,12 +31,21 @@
 .centered {
   text-align: center; }
 
+.padded--vertical--lg {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+.padded--vertical--m {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+.padded--vertical--sm {
+  padding-top: 10px;
+  padding-bottom: 10px; }
 .padded--lg {
   padding: 40px; }
 .padded--m {
-  padding: 10px; }
+  padding: 20px; }
 .padded--sm {
-  padding: 5px; }
+  padding: 10px; }
 
 .page-section {
   position: relative;
@@ -353,7 +362,7 @@ body {
   .description--emphatic__descriptor {
     color: #FFAC38;
     font-family: "Montserrat";
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: bold;
     font-style: italic;
     text-transform: uppercase;
