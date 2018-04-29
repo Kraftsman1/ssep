@@ -1,11 +1,11 @@
 * { box-sizing: border-box; }
 
 .clearfix:after {
-   content: " ";
-   visibility: hidden;
-   display: block;
-   height: 0;
-   clear: both;
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
 }
 
 .transition { transition: all .4s ease; }
@@ -33,13 +33,32 @@
 .centered { text-align: center; }
 
 .padded {
+  $padding-lg: 40px;
+  $padding-m: 20px;
+  $padding-sm: 10px;
+
+  &--vertical {
+    &--lg {
+      padding-top: $padding-lg;
+      padding-bottom: $padding-lg;
+    }
+    &--m {
+      padding-top:  $padding-m;
+      padding-bottom:  $padding-m;
+    }
+    &--sm {
+      padding-top: $padding-sm;
+      padding-bottom: $padding-sm;
+    }
+  }
+
   &--lg {
-    padding: 40px;
+    padding: $padding-lg;
   }
   &--m {
-    padding: 10px;
+    padding:  $padding-m;
   }
   &--sm {
-    padding: 5px;
+    padding: $padding-sm;
   }
 }
