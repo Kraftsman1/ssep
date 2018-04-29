@@ -17,7 +17,7 @@ title: SSEP
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   SSEP Website
-baseurl: "/seep" # the subpath of your site, e.g. /blog
+baseurl: "/ssep" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
 github_username:
