@@ -1,10 +1,38 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
+    <meta property="og:title" content="SSEP" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/seep/" />
+    <meta property="og:image" content="/seep/images/logo-bg.png" />
+    <meta property="og:description" content="SSEP Website"/>
 
-<section class="page-section page-section--full page-section--index-top-section">
-    <video class="video-bg__video" src="{{site.url}}{{base.url}}/images/video/ssep1.mp4" preload="true" autoplay="autoplay" loop="loop"><source src="{{site.url}}{{base.url}}/images/video/ssep1.mp4" type="video/mp4"></video>
+    <title></title>
+
+    <link rel="stylesheet" href="/seep/vendor/foundation.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|IBM+Plex+Sans:300,700|Muli|Montserrat:900,900i">
+    <link rel="stylesheet" href=https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css>
+
+    <link rel="stylesheet" href="/seep/css/styles.css">
+  </head>
+
+  <body>
+    <div class="top-bar">
+    <i class="top-bar__button top-bar__button--hidden" style="width: 110px;"></i>
+    <span class="top-bar__logo"><a href="/"><img src="images/ssep-white.svg" alt="SSEP"></a></span>
+    <i class="material-icons top-bar__button top-bar__button--padding-lg" id="menu-button">menu</i>
+</div>
+
+<div id="menu" class="right">
+    MENU
+</div>
+
+    <section class="page-section page-section--full page-section--index-top-section">
+    <video class="video-bg__video" src="/images/video/ssep1.mp4" preload="true" autoplay="autoplay" loop="loop"><source src="/images/video/ssep1.mp4" type="video/mp4"></video>
     <div class="section-overlay section-overlay--darken"> </div>
     <h1 class="page-section__title">Educating Communities</h1>
     <h2 class="page-section__subtitle">Sub Saharan Education Project</h2>
@@ -29,7 +57,7 @@ layout: default
     </div>
     <div class="row">
         <div class="small-12 large-12 columns">
-            <img class="infographic infographic--wide" src="{{site.url}}{{base.url}}/images/mission.png">
+            <img class="infographic infographic--wide" src="/images/mission.png">
         </div>
     </div>
 </section>
@@ -41,3 +69,15 @@ layout: default
 <section class="page-section">
     <h1>Support Our Cause</h1>
 </section>
+
+    <div class="footer">
+    <div class="footer__content">
+        footer
+    </div>
+</div>
+
+    <div id="overlay" class="js-overlay"></div>
+    <script src="/seep/vendor/jquery-3.3.1.min.js"></script>
+    <script src="/seep/js/ui.js"></script>
+  </body>
+</html>
