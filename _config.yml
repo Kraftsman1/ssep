@@ -32,6 +32,7 @@ markdown: kramdown
 # to override the default setting.
 exclude:
   - dev
+  - node_modules
 #   - Gemfile
 #   - Gemfile.lock
 #   - node_modules
