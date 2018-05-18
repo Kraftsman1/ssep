@@ -1,0 +1,53 @@
+$max-divisions: 100;
+
+@function rational-grid-column($columns) {
+  @return 100% / $columns;
+}
+
+@mixin rational-grid-column($denominator) {
+  -ms-flex: 0 0 rational-grid-column($denominator);
+  flex: 0 0 rational-grid-column($denominator);
+  max-width: rational-grid-column($denominator);
+}
+
+@mixin columns-base {
+    -ms-flex: 1 1 0px;
+    flex: 1 1 0px;
+    padding-right: .9375rem;
+    padding-left: .9375rem;
+    min-width: 0;
+}
+
+.row {
+    &--full {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: initial;
+    }
+    .columns-rational {
+        @include columns-base;
+        &.large-1 {
+            @include breakpoint(large only) {
+                $d: 1;
+                @while $d <= $max-divisions {
+                    &-#{$d} {
+                        @include rational-grid-column($d);
+                    }
+                    $d: $d + 1;
+                }
+            }
+        }
+        &.small-1 {
+            @include breakpoint(small only) {
+                $d: 1;
+                @while $d <= $max-divisions {
+                    &-#{$d} {
+                        @include rational-grid-column($d);
+                    }
+                    $d: $d + 1;
+                }
+            }
+        }
+    }
+}
