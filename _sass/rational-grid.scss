@@ -13,6 +13,12 @@ $max-divisions: 100;
 @mixin columns-base {
     -ms-flex: 1 1 0px;
     flex: 1 1 0px;
+    min-width: 0;
+}
+
+@mixin columns-base-padded {
+    -ms-flex: 1 1 0px;
+    flex: 1 1 0px;
     padding-right: .9375rem;
     padding-left: .9375rem;
     min-width: 0;
@@ -28,7 +34,7 @@ $max-divisions: 100;
     .columns-rational {
         @include columns-base;
         &.large-1 {
-            @include breakpoint(large only) {
+            @include breakpoint(large up) {
                 $d: 1;
                 @while $d <= $max-divisions {
                     &-#{$d} {
